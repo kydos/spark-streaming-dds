@@ -6,7 +6,9 @@ organization 	:= "org.apache.spark"
 
 scalaVersion 	:= "2.11.5"
 
-resolvers += "Vortex Snapshot Repo" at "https://dl.dropboxusercontent.com/u/19238968/vortex/mvn-repo"
+// Make sure you have Vortex Cafe installed on your local maven repo
+
+resolvers += "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"
 
 resolvers += "nuvo.io maven repo" at "http://nuvo-io.github.com/mvn-repo/snapshots"
 
